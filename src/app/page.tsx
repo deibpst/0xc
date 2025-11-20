@@ -5,8 +5,10 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-zinc-50 font-sans dark:bg-black transition-colors duration-300 scroll-smooth">
       {/* Navbar */}
       <nav className="w-full fixed top-0 left-0 z-50 border-b border-zinc-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/70 backdrop-blur-md">
-        <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-semibold text-black dark:text-zinc-50">0xC</h1>
+        <div className="w-full flex items-center justify-between px-6 py-4">
+          <h1 className="text-2xl font-semibold text-black dark:text-zinc-50">
+            <a href="#home">0xC</a>
+          </h1>
           <ul className="hidden sm:flex space-x-6 text-zinc-700 dark:text-zinc-300">
             <li>
               <a href="#home" className="hover:text-black dark:hover:text-white transition">Home</a>
@@ -15,7 +17,7 @@ export default function Home() {
               <a href="#about" className="hover:text-black dark:hover:text-white transition">Sobre nosotros</a>
             </li>
             <li>
-              <a href="#staff" className="hover:text-black dark:hover:text-white transition">Staff</a>
+              <a href="#founders" className="hover:text-black dark:hover:text-white transition">Founders</a>
             </li>
             <li>
               <a href="#contacto" className="hover:text-black dark:hover:text-white transition">Contacto</a>
@@ -49,12 +51,12 @@ export default function Home() {
       </section>
 
       <section
-        id="staff"
+        id="founders"
         className="h-screen w-full flex flex-col items-center justify-center px-8 text-center "
       >
-        <h2 className="text-4xl font-bold text-black dark:text-zinc-50 mb-6">Staff</h2>
+        <h2 className="text-4xl font-bold text-black dark:text-zinc-50 mb-6">Founders</h2>
         <p className="max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-400">
-          staff info
+          core members info
         </p>
       </section>
 
@@ -76,7 +78,7 @@ export default function Home() {
             Linktr.ee
           </a>
           </li>
-          <li><a href="mailto:0xc.devs@gmail.com" target="_blank" className="hover:text-black dark:hover:text-white transition">
+          <li><a href="mailto:0xc.devs@gmail.com" target="_blank" className="hover:text-black dark:hover:text-white hover transition">
             Email
           </a>
           </li>
