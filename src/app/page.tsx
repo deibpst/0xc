@@ -44,8 +44,7 @@ export default function Home() {
           0xC es una comunidad que surgió por una amistad universitaria de cuatro personas.
           Lo que 0xC busca es fomentar la interacción entre personas de la industria tech de
           todas las edades y lugares del mundo. Buscamos principalmente apoyar a aquellos que
-          apenas inician su camino profesional pero sin dejar de lado a aquellos que ya tienen
-          experiencia, creando espacios donde se pueda compartir conocimiento, oportunidades y
+          apenas inician su camino profesional pero sin dejar de lado a aquellos ya más experimentados, creando espacios donde se pueda compartir conocimiento, oportunidades y
           amistad.
         </p>
       </section>
