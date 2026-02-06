@@ -9,18 +9,18 @@ export default function Home() {
   const founders = [
     {
       name: "David Ponce",
-      description: "Descripción breve sobre el founder 1. Información relevante sobre su rol y experiencia.",
-      image: "/founders/founder1.jpg"
+      description: "Me apasiona desarrolar soluciones, escuchar música y los e-sports.",
+      image: "/founders/deib.jpeg"
     },
     {
       name: "Yaslie Chávez",
-      description: "Descripción breve sobre el founder 2. Información relevante sobre su rol y experiencia.",
-      image: "/founders/founder2.jpeg"
+      description: "Me encanta la tecnología, el diseño y el café :)",
+      image: "/founders/yas.jpeg"
     },
     {
       name: "Sebastián Monge Juárez",
-      description: "Descripción breve sobre el founder 3. Información relevante sobre su rol y experiencia.",
-      image: "/founders/founder3.jpeg"
+      description: "Me gustan los gatos nomas.",
+      image: "/founders/sebas.jpeg"
     },
     {
       name: "Elvira Isabel",
@@ -28,9 +28,9 @@ export default function Home() {
       image: "/founders/founder4.jpg"
     },
     {
-      name: "Luis",
-      description: "Descripción breve sobre el founder 4. Información relevante sobre su rol y experiencia.",
-      image: "/founders/founder4.jpg"
+      name: "Luis Pérez",
+      description: "Amo los robots, programar y esuchar música 24/siempre.",
+      image: "/founders/luis.jpeg"
     }
   ];
 
