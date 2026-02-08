@@ -78,12 +78,16 @@ export default function Home() {
       </nav>
 
       {/* Section Home */}
-      <section
+      <a
+        href="#about"
         id="home"
         className="h-screen w-full flex items-center justify-center text-center"
       >
-        <h1 className="text-7xl font-bold text-black dark:text-zinc-50">0xC</h1>
-      </section>
+        <h1 className="text-7xl font-bold text-black dark:text-zinc-50">
+          0xC
+        </h1>
+      </a>
+
 
       {/* Section About */}
       <section
