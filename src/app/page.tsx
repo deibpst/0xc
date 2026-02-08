@@ -68,6 +68,9 @@ export default function Home() {
               <a href="#about" className="hover:text-black dark:hover:text-white transition">Sobre nosotros</a>
             </li>
             <li>
+              <a href="#mission-vision" className="hover:text-black dark:hover:text-white transition">Misión y Visión</a>
+            </li>
+            <li>
               <a href="#founders" className="hover:text-black dark:hover:text-white transition">Founders</a>
             </li>
             <li>
@@ -78,15 +81,14 @@ export default function Home() {
       </nav>
 
       {/* Section Home */}
-      <a
-        href="#about"
+      <section
         id="home"
         className="h-screen w-full flex items-center justify-center text-center"
       >
         <h1 className="text-7xl font-bold text-black dark:text-zinc-50">
-          0xC
+          <a href="#about">0xC</a>
         </h1>
-      </a>
+      </section>
 
 
       {/* Section About */}
@@ -96,7 +98,17 @@ export default function Home() {
       >
         <h2 className="text-4xl font-bold text-black dark:text-zinc-50 mb-6">Sobre nosotros</h2>
         <p className="max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-400">
-          0xC es una comunidad que surgió por una amistad universitaria de cuatro personas.
+          0xC es una comunidad enfocada a la tecnología que surgió por una amistad universitaria de cuatro personas que tras asistir a varios eventos Tech se dieron cuenta de la gran oportunidad que esta idea representaba y del potencial que tenía para impactar positivamente en la comunidad.
+        </p>
+      </section>
+
+      {/* Section Misión y Visión */}
+      <section
+        id="mission-vision"
+        className="h-screen w-full flex flex-col items-center justify-center px-8 text-center "
+      >
+        <h2 className="text-4xl font-bold text-black dark:text-zinc-50 mb-6">Misión y Visión</h2>
+        <p className="max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-400">
           Lo que 0xC busca es fomentar la interacción entre personas de la industria tech de
           todas las edades y lugares del mundo. Buscamos principalmente apoyar a aquellos que
           apenas inician su camino profesional pero sin dejar de lado a aquellos ya más experimentados, creando espacios donde se pueda compartir conocimiento, oportunidades y
