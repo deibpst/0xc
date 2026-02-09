@@ -9,7 +9,7 @@ export default function Home() {
   const founders = [
     {
       name: "David Ponce",
-      description: "Me apasiona desarrolar soluciones, escuchar música y los e-sports.",
+      description: "Me apasiona desarrollar soluciones, escuchar música y los e-sports.",
       image: "/founders/deib.jpeg",
       instagram: "https://www.instagram.com/deibpst/",
       linkedin: "https://www.linkedin.com/in/davidpos/"
@@ -23,7 +23,7 @@ export default function Home() {
     },
     {
       name: "Sebastián Monge Juárez",
-      description: "Me gustan los gatos nomas.",
+      description: "Me gustan los gatos nomás.",
       image: "/founders/sebas.jpeg",
       instagram: "https://www.instagram.com/chebascawn?igsh=NWJoMWNjMzh4eTF1",
       linkedin: "https://www.linkedin.com/in/chebasdev?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
@@ -37,7 +37,7 @@ export default function Home() {
     },
     {
       name: "Luis Pérez",
-      description: "Amo los robots, programar y esuchar música 24/siempre.",
+      description: "Amo los robots, programar y escuchar música 24/siempre.",
       image: "/founders/luis.jpeg",
       instagram: "https://www.instagram.com/luivi_lab/",
       linkedin: "https://www.linkedin.com/in/luuuiscastroo/"
