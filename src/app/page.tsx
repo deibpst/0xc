@@ -9,7 +9,7 @@ export default function Home() {
   const founders = [
     {
       name: "David Ponce",
-      description: "Me apasiona desarrolar soluciones, escuchar música y los e-sports.",
+      description: "Me apasiona desarrollar soluciones, escuchar música y los e-sports.",
       image: "/founders/deib.jpeg",
       instagram: "https://www.instagram.com/deibpst/",
       linkedin: "https://www.linkedin.com/in/davidpos/"
@@ -23,7 +23,7 @@ export default function Home() {
     },
     {
       name: "Sebastián Monge Juárez",
-      description: "Me gustan los gatos nomas.",
+      description: "Me gustan los gatos nomás.",
       image: "/founders/sebas.jpeg",
       instagram: "https://www.instagram.com/chebascawn?igsh=NWJoMWNjMzh4eTF1",
       linkedin: "https://www.linkedin.com/in/chebasdev?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
@@ -37,7 +37,7 @@ export default function Home() {
     },
     {
       name: "Luis Pérez",
-      description: "Amo los robots, programar y esuchar música 24/siempre.",
+      description: "Amo los robots, programar y escuchar música 24/siempre.",
       image: "/founders/luis.jpeg",
       instagram: "https://www.instagram.com/luivi_lab/",
       linkedin: "https://www.linkedin.com/in/luuuiscastroo/"
@@ -83,11 +83,30 @@ export default function Home() {
       {/* Section Home */}
       <section
         id="home"
-        className="h-screen w-full flex items-center justify-center text-center"
+        className="h-screen w-full flex items-center justify-center text-center relative"
       >
         <h1 className="text-7xl font-bold text-black dark:text-zinc-50">
           <a href="#about">0xC</a>
         </h1>
+
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
+          <a href="#about" aria-label="Scroll to about">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-10 h-10 text-black dark:text-zinc-50"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </a>
+        </div>
       </section>
 
 
@@ -98,7 +117,7 @@ export default function Home() {
       >
         <h2 className="text-4xl font-bold text-black dark:text-zinc-50 mb-6">Sobre nosotros</h2>
         <p className="max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-400">
-          0xC es una comunidad enfocada a la tecnología que surgió por una amistad universitaria de cuatro personas que tras asistir a varios eventos Tech se dieron cuenta de la gran oportunidad que esta idea representaba y del potencial que tenía para impactar positivamente en la comunidad.
+          0xC es una comunidad enfocada en la tecnología que surgió de una amistad universitaria entre cuatro personas que, tras asistir a varios eventos tech, se dieron cuenta de la gran oportunidad que esta idea representaba y del potencial que tenía para impactar positivamente en la comunidad.
         </p>
       </section>
 
@@ -109,10 +128,7 @@ export default function Home() {
       >
         <h2 className="text-4xl font-bold text-black dark:text-zinc-50 mb-6">Misión y Visión</h2>
         <p className="max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-400">
-          Lo que 0xC busca es fomentar la interacción entre personas de la industria tech de
-          todas las edades y lugares del mundo. Buscamos principalmente apoyar a aquellos que
-          apenas inician su camino profesional pero sin dejar de lado a aquellos ya más experimentados, creando espacios donde se pueda compartir conocimiento, oportunidades y
-          amistad.
+          Lo que 0xC busca es fomentar la interacción entre personas de la industria tech de todas las edades y lugares del mundo. Buscamos principalmente apoyar a quienes apenas inician su camino profesional, sin dejar de lado a aquellos más experimentados, creando espacios donde se pueda compartir conocimiento, oportunidades y amistad.
         </p>
       </section>
 
