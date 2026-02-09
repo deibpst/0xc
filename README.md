@@ -1,20 +1,19 @@
-## Rama dev
+# 0xC
 
-App hecha con Next.js
+## About
 
+0xC es una comunidad enfocada en la tecnología que surgió de una amistad universitaria entre cuatro personas que, tras asistir a varios eventos tech, se dieron cuenta de la gran oportunidad que esta idea representaba y del potencial que tenía para impactar positivamente en la comunidad.
 
-Primero lo primero, correr el server:
+## Misión y Visión
 
-```bash
-npm run dev
-# ó
-yarn dev
-# ó
-pnpm dev
-# ó
-bun dev
+Lo que 0xC busca es fomentar la interacción entre personas de la industria tech de todas las edades y lugares del mundo. Buscamos principalmente apoyar a quienes apenas inician su camino profesional, sin dejar de lado a aquellos más experimentados, creando espacios donde se pueda compartir conocimiento, oportunidades y amistad.
+
+## Founders
+
 ```
-
-Abrir [http://localhost:3000](http://localhost:3000) con el navegador para ver el resultado.
-
-El contenido principal se encuentra en `app/page.tsx`. La página se actualiza sola conforme hay cambios.
+David Ponce Santos
+Yaslie Chavéz
+Sebastián Monge Juárez
+Elvira García
+Luis Pérez
+```
