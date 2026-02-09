@@ -68,6 +68,9 @@ export default function Home() {
               <a href="#about" className="hover:text-black dark:hover:text-white transition">Sobre nosotros</a>
             </li>
             <li>
+              <a href="#mission-vision" className="hover:text-black dark:hover:text-white transition">Misión y Visión</a>
+            </li>
+            <li>
               <a href="#founders" className="hover:text-black dark:hover:text-white transition">Founders</a>
             </li>
             <li>
@@ -80,10 +83,32 @@ export default function Home() {
       {/* Section Home */}
       <section
         id="home"
-        className="h-screen w-full flex items-center justify-center text-center"
+        className="h-screen w-full flex items-center justify-center text-center relative"
       >
-        <h1 className="text-7xl font-bold text-black dark:text-zinc-50">0xC</h1>
+        <h1 className="text-7xl font-bold text-black dark:text-zinc-50">
+          <a href="#about">0xC</a>
+        </h1>
+
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
+          <a href="#about" aria-label="Scroll to about">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-10 h-10 text-black dark:text-zinc-50"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </a>
+        </div>
       </section>
+
 
       {/* Section About */}
       <section
@@ -92,11 +117,18 @@ export default function Home() {
       >
         <h2 className="text-4xl font-bold text-black dark:text-zinc-50 mb-6">Sobre nosotros</h2>
         <p className="max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-400">
-          0xC es una comunidad que surgió por una amistad universitaria de cuatro personas.
-          Lo que 0xC busca es fomentar la interacción entre personas de la industria tech de
-          todas las edades y lugares del mundo. Buscamos principalmente apoyar a aquellos que
-          apenas inician su camino profesional pero sin dejar de lado a aquellos ya más experimentados, creando espacios donde se pueda compartir conocimiento, oportunidades y
-          amistad.
+          0xC es una comunidad enfocada en la tecnología que surgió de una amistad universitaria entre cuatro personas que, tras asistir a varios eventos tech, se dieron cuenta de la gran oportunidad que esta idea representaba y del potencial que tenía para impactar positivamente en la comunidad.
+        </p>
+      </section>
+
+      {/* Section Misión y Visión */}
+      <section
+        id="mission-vision"
+        className="h-screen w-full flex flex-col items-center justify-center px-8 text-center "
+      >
+        <h2 className="text-4xl font-bold text-black dark:text-zinc-50 mb-6">Misión y Visión</h2>
+        <p className="max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-400">
+          Lo que 0xC busca es fomentar la interacción entre personas de la industria tech de todas las edades y lugares del mundo. Buscamos principalmente apoyar a quienes apenas inician su camino profesional, sin dejar de lado a aquellos más experimentados, creando espacios donde se pueda compartir conocimiento, oportunidades y amistad.
         </p>
       </section>
 
