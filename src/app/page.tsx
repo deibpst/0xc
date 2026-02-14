@@ -1,10 +1,28 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
+
+// Hook para detectar dark mode del sistema
+function useSystemTheme(): "light" | "dark" {
+  const subscribe = (callback: () => void) => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    mediaQuery.addEventListener("change", callback);
+    return () => mediaQuery.removeEventListener("change", callback);
+  };
+
+  const getSnapshot = () => {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  };
+
+  const getServerSnapshot = (): "light" | "dark" => "light";
+
+  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+}
 
 export default function Home() {
   const [currentFounder, setCurrentFounder] = useState(0);
+  const calTheme = useSystemTheme();
 
   const founders = [
     {
@@ -262,11 +280,32 @@ export default function Home() {
 
       <section
         id="contacto"
-        className="h-screen w-full flex flex-col items-center justify-center px-8 text-center "
+        className="min-h-screen w-full flex flex-col items-center justify-center px-8 py-20 text-center"
       >
-        <h2 className="text-4xl font-bold text-black dark:text-zinc-50 mb-6">Contacto</h2>
+        <h2 className="text-4xl font-bold text-black dark:text-zinc-50 mb-2">Contacto</h2>
+        <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-8 max-w-xl">
+          ¿Quieres platicar con nosotros? Agenda una llamada con algún miembro de la comunidad.
+        </p>
 
-        <div className="flex flex-wrap justify-center items-center gap-6 mt-4">
+        {/* Cal.com Inline Embed */}
+        <div
+          id="cal-embed"
+          className="w-full max-w-3xl h-[600px] rounded-lg overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 mb-8"
+        >
+          <iframe
+            key={calTheme} // Forzar re-render cuando cambie el tema
+            src={`https://cal.com/0xc-community/30min`}
+            frameBorder="0"
+            className="w-full h-full"
+            allow="camera; microphone; fullscreen; display-capture"
+          />
+        </div>
+
+        <p className="text-sm text-zinc-500 dark:text-zinc-500 mb-6">
+          También puedes encontrarnos en nuestras redes sociales:
+        </p>
+
+        <div className="flex flex-wrap justify-center items-center gap-6">
           <a
             href="https://www.instagram.com/0xc.ommunity/"
             target="_blank"
